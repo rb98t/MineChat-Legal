@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MineChat — Adatvédelmi szabályzat</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 2rem 1.25rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65; color: #e5e9f0; background: #0b0f1a;
+      display: flex; justify-content: center;
+    }
+    main { width: 100%; max-width: 760px; }
+    h1 { font-size: 1.8rem; margin: 0 0 .25rem; color: #f8fafc; }
+    h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; color: #f1f5f9; }
+    p.meta { color: #94a3b8; margin-top: 0; }
+    a { color: #38bdf8; }
+    ul { padding-left: 1.25rem; }
+    li { margin: .3rem 0; }
+    code { background: #101422; padding: .1rem .35rem; border-radius: 5px; font-size: .9em; }
+    .note {
+      padding: 1rem 1.25rem; border-radius: 12px; background: rgba(56,189,248,.06);
+      border: 1px solid rgba(56,189,248,.18); color: #cbd5e1; font-size: .92rem;
+    }
+    .en { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.08); color: #cbd5e1; }
+    .backlink { display: inline-block; margin-bottom: 1.5rem; color: #94a3b8; text-decoration: none; }
+    footer { margin-top: 2.5rem; color: #475569; font-size: .82rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="backlink" href="index.html">← Jogi információk</a>
+    <h1>Adatvédelmi szabályzat</h1>
+    <p class="meta">MineChat · Hatályos: 2026. július 14.</p>
+
+    <p class="note">
+      Röviden: a MineChat <strong>nem üzemeltet saját szervert</strong>, és <strong>nem küldi el az
+      adataidat</strong> semmilyen általunk üzemeltetett rendszerbe. Az adataid az eszközödön
+      maradnak; az app közvetlenül a te Minecraft-szervereidhez és a bejelentkezéshez szükséges
+      hivatalos Microsoft/Mojang szolgáltatásokhoz kapcsolódik.
+    </p>
+
+    <h2>1. Ki vagyunk</h2>
+    <p>
+      A MineChat egy Minecraft: Java Edition csevegő-kliens Android eszközökre. Az alkalmazást
+      egyéni fejlesztő üzemelteti. Kapcsolat: <a href="mailto:bg.robrt@gmail.com">bg.robrt@gmail.com</a>.
+    </p>
+
+    <h2>2. Milyen adatokat kezelünk és hol tároljuk</h2>
+    <p>Az alkalmazás az alábbi adatokat <strong>kizárólag a te eszközödön</strong> tárolja:</p>
+    <ul>
+      <li><strong>Offline karakternevek és mentett szerverek</strong> — a saját listád, az eszköz
+        helyi tárolójában (<code>shared_preferences</code>).</li>
+      <li><strong>Microsoft-fiók profiladatok</strong> — a Minecraft-felhasználóneved és
+        -azonosítód (UUID), ha Microsoft-fiókkal jelentkezel be.</li>
+      <li><strong>Microsoft bejelentkezési (refresh) token</strong> — az eszköz biztonságos
+        tárolójában (Android Keystore, <code>flutter_secure_storage</code>), hogy ne kelljen
+        minden indításkor újra bejelentkezned. Kijelentkezéskor törlődik.</li>
+    </ul>
+    <p>
+      Ezeket az adatokat <strong>nem továbbítjuk</strong> semmilyen általunk üzemeltetett szerverre —
+      nincs is ilyen szerverünk. Nem gyűjtünk és nem tárolunk chat-üzeneteket a szervereinken.
+    </p>
+
+    <h2>3. Harmadik felek, akikhez az app közvetlenül kapcsolódik</h2>
+    <ul>
+      <li><strong>Microsoft / Xbox Live és Mojang</strong> — a bejelentkezéshez és a szerverhez való
+        prémium csatlakozáshoz (OAuth-bejelentkezés, session-hitelesítés). Ezekre a Microsoft, illetve
+        a Mojang saját adatvédelmi szabályzata vonatkozik.</li>
+      <li><strong>Az általad megadott Minecraft-szerverek</strong> — az app közvetlenül csatlakozik
+        hozzájuk; ezek üzemeltetői önálló, tőlünk független felek.</li>
+      <li><strong>Avatar-szolgáltatás</strong> — a karakterfejek megjelenítéséhez nyilvános skin-kép
+        szolgáltatást hívunk a Minecraft-felhasználónév alapján.</li>
+    </ul>
+
+    <h2>4. Reklámok (amennyiben engedélyezve)</h2>
+    <p>
+      Az alkalmazás jövőbeli verziói reklámokat jeleníthetnek meg (Google AdMob). Ilyenkor a Google
+      reklámazonosítót (advertising ID) és a hirdetések kiszolgálásához szükséges adatokat kezelhet a
+      Google saját adatvédelmi szabályzata szerint, és az EU/EGT területén megjelenítjük a
+      hozzájárulási (consent) párbeszédet. Ez a szakasz csak akkor releváns, ha a reklámok
+      ténylegesen aktívak az adott verzióban.
+    </p>
+
+    <h2>5. Gyermekek</h2>
+    <p>
+      Az alkalmazás nem gyermekeknek szól. Nem gyűjtünk tudatosan 13 (illetve a helyi jog szerinti
+      korhatár alatti) éven aluli felhasználóktól személyes adatot.
+    </p>
+
+    <h2>6. Adatmegőrzés és törlés</h2>
+    <p>
+      Mivel minden adat az eszközödön van, azt te ellenőrzöd: a karakterek/szerverek eltávolításával,
+      a Microsoft-fiókból való kijelentkezéssel, vagy az alkalmazás eltávolításával/adattörlésével
+      minden helyben tárolt adat törlődik.
+    </p>
+
+    <h2>7. A szabályzat módosítása</h2>
+    <p>
+      A szabályzatot időről időre frissíthetjük; a lényeges változásokat az alkalmazás
+      frissítésével és a fenti hatálybalépési dátum módosításával jelezzük.
+    </p>
+
+    <h2>8. Kapcsolat</h2>
+    <p>Kérdés esetén: <a href="mailto:bg.robrt@gmail.com">bg.robrt@gmail.com</a>.</p>
+
+    <div class="en">
+      <h2>English summary</h2>
+      <p>
+        MineChat is a Minecraft: Java Edition chat client for Android. It has <strong>no backend
+        server</strong> and does <strong>not transmit your data to us</strong>. All data — your saved
+        offline character names, server list, Microsoft profile info (username/UUID), and Microsoft
+        refresh token (stored in the Android Keystore) — is kept only on your device and can be
+        removed by logging out or uninstalling the app. The app connects directly to Microsoft/Xbox
+        Live and Mojang for sign-in, to the Minecraft servers you choose, and to a public avatar
+        service for skin heads. Future versions may show Google AdMob ads; where that applies, Google
+        may process an advertising ID under its own privacy policy and a consent dialog is shown in
+        the EU/EEA. Not intended for children under 13. Contact:
+        <a href="mailto:bg.robrt@gmail.com">bg.robrt@gmail.com</a>.
+      </p>
+    </div>
+
+    <footer>© 2026 MineChat · A „Minecraft" a Mojang Synergies AB védjegye. Nem hivatalos, független alkalmazás.</footer>
+  </main>
+</body>
+</html>
