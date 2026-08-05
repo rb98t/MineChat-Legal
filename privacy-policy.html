@@ -34,7 +34,7 @@
   <main>
     <a class="backlink" href="index.html">← Jogi információk</a>
     <h1>Adatvédelmi szabályzat</h1>
-    <p class="meta">MineChat · Hatályos: 2026. július 14.</p>
+    <p class="meta">MineChat · Hatályos: 2026. augusztus 5.</p>
 
     <p class="note">
       Röviden: a MineChat <strong>nem üzemeltet saját szervert</strong>, és <strong>nem küldi el az
@@ -74,15 +74,19 @@
         hozzájuk; ezek üzemeltetői önálló, tőlünk független felek.</li>
       <li><strong>Avatar-szolgáltatás</strong> — a karakterfejek megjelenítéséhez nyilvános skin-kép
         szolgáltatást hívunk a Minecraft-felhasználónév alapján.</li>
+      <li><strong>Google Play Billing és RevenueCat</strong> — az alkalmazáson belüli előfizetések (MineChat Pro)
+        kezeléséhez és a jogosultságok ellenőrzéséhez. Nincs hozzáférésünk a bankkártya-adataidhoz.</li>
+      <li><strong>Firebase Crashlytics</strong> — a váratlan leállások (crash) kivizsgálásához. A hibaüzenetek
+        anonimek, és a stabilitás javítását szolgálják.</li>
     </ul>
 
-    <h2>4. Reklámok (amennyiben engedélyezve)</h2>
+    <h2>4. Reklámok</h2>
     <p>
-      Az alkalmazás jövőbeli verziói reklámokat jeleníthetnek meg (Google AdMob). Ilyenkor a Google
+      Az alkalmazás ingyenes verziója reklámokat jelenít meg (Google AdMob). A Google
       reklámazonosítót (advertising ID) és a hirdetések kiszolgálásához szükséges adatokat kezelhet a
       Google saját adatvédelmi szabályzata szerint, és az EU/EGT területén megjelenítjük a
-      hozzájárulási (consent) párbeszédet. Ez a szakasz csak akkor releváns, ha a reklámok
-      ténylegesen aktívak az adott verzióban.
+      hozzájárulási (consent - UMP) párbeszédet. A MineChat Pro előfizetéssel a reklámok teljesen
+      eltávolításra kerülnek.
     </p>
 
     <h2>5. Gyermekek</h2>
@@ -116,9 +120,11 @@
         refresh token (stored in the Android Keystore) — is kept only on your device and can be
         removed by logging out or uninstalling the app. The app connects directly to Microsoft/Xbox
         Live and Mojang for sign-in, to the Minecraft servers you choose, and to a public avatar
-        service for skin heads. Future versions may show Google AdMob ads; where that applies, Google
+        service for skin heads. The free version shows Google AdMob ads; Google
         may process an advertising ID under its own privacy policy and a consent dialog is shown in
-        the EU/EEA. Not intended for children under 13. Contact:
+        the EU/EEA. In-app subscriptions (MineChat Pro) are processed via Google Play Billing and
+        RevenueCat without giving us access to payment details. We also use Firebase Crashlytics for 
+        anonymous crash reporting. Not intended for children under 13. Contact:
         <a href="mailto:bg.robrt@gmail.com">bg.robrt@gmail.com</a>.
       </p>
     </div>
