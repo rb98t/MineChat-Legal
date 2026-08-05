@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="hu">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MineChat — Adatvédelmi szabályzat</title>
+  <title>MineChat — Privacy Policy</title>
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
@@ -26,7 +26,6 @@
       padding: 1rem 1.25rem; border-radius: 12px; background: rgba(56,189,248,.06);
       border: 1px solid rgba(56,189,248,.18); color: #cbd5e1; font-size: .92rem;
     }
-    .en { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.08); color: #cbd5e1; }
     .backlink { display: inline-block; margin-bottom: 1.5rem; color: #94a3b8; text-decoration: none; }
     footer { margin-top: 2.5rem; color: #475569; font-size: .82rem; }
     table { border-collapse: collapse; width: 100%; margin: .75rem 0; font-size: .92rem; }
@@ -36,335 +35,281 @@
 </head>
 <body>
   <main>
-    <a class="backlink" href="index.html">← Jogi információk</a>
-    <h1>Adatvédelmi szabályzat</h1>
-    <p class="meta">MineChat · Hatályos: 2026. augusztus 5.</p>
+    <a class="backlink" href="index.html">← Legal Information</a>
+    <h1>Privacy Policy</h1>
+    <p class="meta">MineChat · Effective: August 5, 2026</p>
 
     <p class="note">
-      Röviden: a MineChat <strong>nem üzemeltet saját szervert</strong>, és <strong>nem küldi el az
-      adataidat</strong> semmilyen általunk üzemeltetett rendszerbe. Az adataid az eszközödön
-      maradnak; az app közvetlenül a te Minecraft-szervereidhez és a bejelentkezéshez szükséges
-      hivatalos Microsoft/Mojang szolgáltatásokhoz kapcsolódik.
+      In short: MineChat has <strong>no backend server</strong> and does <strong>not send your data
+      to us</strong>. Your data stays on your device; the app connects directly to your Minecraft
+      servers and to the official Microsoft/Mojang authentication services.
     </p>
 
-    <!-- 1. Adatkezelő -->
-    <h2>1. Adatkezelő és elérhetőség</h2>
+    <!-- 1. Data Controller -->
+    <h2>1. Data Controller</h2>
     <p>
-      A MineChat egy Minecraft: Java Edition csevegő-kliens Android eszközökre. Az alkalmazást
-      egyéni fejlesztő üzemelteti (adatkezelő).
+      MineChat is a Minecraft: Java Edition chat client for Android, developed and operated by an
+      independent individual developer (the "Data Controller").
     </p>
     <ul>
-      <li><strong>E-mail:</strong> <a href="mailto:bg.robrt@gmail.com">bg.robrt@gmail.com</a></li>
+      <li><strong>Email:</strong> <a href="mailto:bg.robrt@gmail.com">bg.robrt@gmail.com</a></li>
+      <li><strong>Discord:</strong> <a href="https://discord.gg/XNfuz8vDs">discord.gg/XNfuz8vDs</a></li>
     </ul>
     <p>
-      Ez az adatvédelmi szabályzat az Európai Unió Általános Adatvédelmi Rendelete (GDPR) és a
-      vonatkozó magyar jogszabályok szerint tájékoztat az adatkezelési gyakorlatunkról.
+      This Privacy Policy explains how we collect, use, and protect your personal data in compliance
+      with the General Data Protection Regulation (GDPR) and applicable laws.
     </p>
 
-    <!-- 2. Milyen adatokat gyűjtünk és miért -->
-    <h2>2. Milyen adatokat kezelünk és miért</h2>
+    <!-- 2. Information We Collect and Why -->
+    <h2>2. Information We Collect and Why</h2>
 
-    <h3>A. Általad megadott adatok (helyi tárolás az eszközödön)</h3>
+    <h3>A. Information You Provide (On-Device Storage)</h3>
     <p>
-      Az alkalmazás alapfunkcióihoz (Minecraft-szerverekhez való csatlakozás) az alábbi adatokat
-      <strong>kizárólag a te eszközödön</strong> tároljuk:
+      To provide its core functionality (connecting to Minecraft servers), the app stores the following
+      data <strong>exclusively on your device</strong>:
     </p>
     <table>
       <tr>
-        <th>Adat</th>
-        <th>Hol tároljuk</th>
-        <th>Cél</th>
+        <th>Data</th>
+        <th>Where Stored</th>
+        <th>Purpose</th>
       </tr>
       <tr>
-        <td>Offline karakternevek (felhasználónevek)</td>
-        <td><code>SharedPreferences</code> (helyi tárhely)</td>
-        <td>Azonosítás a Minecraft-szerveren offline módban</td>
+        <td>Offline character names (usernames)</td>
+        <td><code>SharedPreferences</code> (local storage)</td>
+        <td>Identification on Minecraft servers in offline mode</td>
       </tr>
       <tr>
-        <td>Mentett szerverlista (cím, port, címke, verzió, automatikus parancsok)</td>
-        <td><code>SharedPreferences</code> (helyi tárhely)</td>
-        <td>Gyors csatlakozás a kedvenc szervereidhez</td>
+        <td>Saved server list (address, port, label, version, auto-commands)</td>
+        <td><code>SharedPreferences</code> (local storage)</td>
+        <td>Quick access to your favourite servers</td>
       </tr>
       <tr>
-        <td>Microsoft-fiók profiladatok (Minecraft-felhasználónév, UUID)</td>
-        <td><code>SharedPreferences</code> (helyi tárhely)</td>
-        <td>Prémium szerverre csatlakozáshoz szükséges azonosítás</td>
+        <td>Microsoft account profile (Minecraft username, UUID)</td>
+        <td><code>SharedPreferences</code> (local storage)</td>
+        <td>Premium server authentication</td>
       </tr>
       <tr>
-        <td>Microsoft bejelentkezési (refresh) token</td>
-        <td><code>flutter_secure_storage</code> (Android Keystore, titkosított)</td>
-        <td>Hogy ne kelljen minden indításkor újra bejelentkezned</td>
+        <td>Microsoft sign-in refresh token</td>
+        <td><code>flutter_secure_storage</code> (Android Keystore, encrypted)</td>
+        <td>Silent session restore without re-signing in every launch</td>
       </tr>
       <tr>
-        <td>Alkalmazás-beállítások (betűméret, téma, auto-reconnect, auto-move, hotkey-ek, joystick, 3D nézeti távolság stb.)</td>
-        <td><code>SharedPreferences</code> (helyi tárhely)</td>
-        <td>A felhasználói élmény személyre szabása</td>
+        <td>App settings (font size, theme, auto-reconnect, auto-move, hotkeys, joystick, 3D view distance, etc.)</td>
+        <td><code>SharedPreferences</code> (local storage)</td>
+        <td>Personalisation of the user experience</td>
       </tr>
       <tr>
-        <td>Előfizetési állapot (MineChat Pro)</td>
-        <td><code>SharedPreferences</code> (helyi gyorsítótár)</td>
-        <td>Offline állapotban is a helyes tier megjelenítése</td>
+        <td>Subscription status (MineChat Pro)</td>
+        <td><code>SharedPreferences</code> (local cache)</td>
+        <td>Correct tier display while offline</td>
       </tr>
       <tr>
-        <td>Térképtömbök (map_data)</td>
-        <td>Helyi fájlrendszer (<code>app_flutter/map_data</code>)</td>
-        <td>A szerveren lévő térkép megjelenítéséhez</td>
+        <td>Map tile data</td>
+        <td>Local filesystem (<code>app_flutter/map_data</code>)</td>
+        <td>Rendering in-game maps received from the server</td>
       </tr>
     </table>
     <p>
-      <strong>A fenti adatokat nem továbbítjuk</strong> semmilyen általunk üzemeltetett szerverre —
-      nincs is ilyen szerverünk. Nem gyűjtünk és nem tárolunk chat-üzeneteket a mi oldalunkon.
+      <strong>None of the above data is transmitted</strong> to any server operated by us — we do not
+      operate one. We do not collect or store chat messages on our side.
     </p>
     <p>
-      <strong>Jogalap:</strong> Szerződés teljesítése (GDPR 6. cikk (1) bek. b) pont) — ezek az
-      adatok az alkalmazás működéséhez elengedhetetlenek.
+      <strong>Legal basis:</strong> Performance of a contract (Art. 6(1)(b) GDPR) — this data is
+      necessary for the app to function.
     </p>
 
-    <h3>B. Automatikusan gyűjtött adatok (harmadik fél SDK-k)</h3>
+    <h3>B. Automatically Collected Data (Third-Party SDKs)</h3>
     <p>
-      Az alkalmazás harmadik fél szoftverfejlesztő-készleteket (SDK-kat) használ a működéshez,
-      a stabilitás biztosításához és a monetizációhoz. Ezek az SDK-k az alábbiakban leírt adatokat
-      gyűjthetik:
+      The app uses third-party Software Development Kits (SDKs) for stability, monetisation, and
+      subscription management. These SDKs may collect the data described below:
     </p>
     <ol>
       <li>
-        <strong>Firebase Crashlytics (Google):</strong> Kizárólag a váratlan leállások (crash) automatikus
-        jelentésére szolgál. A hibajelentések <strong>anonimak</strong>: tartalmazzák az eszköz típusát,
-        az operációs rendszer verzióját, a hiba kódsorát (stack trace), de <strong>nem tartalmaznak</strong>
-        személyes adatokat (felhasználónevet, chat-üzenetet, szervercímet). Debug módban a gyűjtés ki van
-        kapcsolva (<code>setCrashlyticsCollectionEnabled(false)</code>), kizárólag éles (release)
-        buildekben aktív.
+        <strong>Firebase Crashlytics (Google):</strong> Used exclusively for automatic, anonymous crash
+        reporting. Reports contain the device type, OS version, and stack traces, but <strong>do not
+        contain</strong> any personal data (usernames, chat messages, or server addresses). Collection
+        is disabled in debug builds (<code>setCrashlyticsCollectionEnabled(false)</code>) and is active
+        only in release builds.
       </li>
       <li>
-        <strong>Google AdMob:</strong> A MineChat ingyenes verziója hirdetéseket jelenít meg (banner és
-        interstitial formátumban). Az AdMob az eszközazonosítót (Android Advertising ID, AAID) és az
-        IP-címet használhatja a hirdetések kiszolgálásához és a csalásmegelőzéshez, a
-        <a href="https://policies.google.com/privacy">Google saját adatvédelmi szabályzata</a> szerint.
-        A MineChat Pro előfizetéssel a hirdetések teljes mértékben eltávolításra kerülnek, és az AdMob
-        SDK nem kér le további adatokat.
+        <strong>Google AdMob:</strong> The free version of MineChat displays banner and interstitial
+        advertisements. AdMob may process the Android Advertising ID (AAID) and IP address for ad
+        serving and fraud prevention, under
+        <a href="https://policies.google.com/privacy">Google's own Privacy Policy</a>.
+        MineChat Pro subscribers see no ads, and the AdMob SDK does not request further data for them.
       </li>
       <li>
-        <strong>RevenueCat:</strong> Az alkalmazáson belüli előfizetések (MineChat Pro) és vásárlási
-        jogosultságok kezelésére szolgál. A RevenueCat egy anonim „App User ID"-t és a vásárlási
-        előzményeket követi nyomon, de <strong>nincs hozzáférése a bankkártya-adataidhoz</strong> —
-        ezeket kizárólag a Google Play Billing rendszere kezeli. Lásd:
-        <a href="https://www.revenuecat.com/privacy/">RevenueCat adatvédelmi szabályzata</a>.
+        <strong>RevenueCat:</strong> Used to manage in-app subscriptions (MineChat Pro) and entitlement
+        checking. RevenueCat tracks an anonymous "App User ID" and purchase history, but <strong>has no
+        access to your credit card details</strong> — payments are processed solely by Google Play
+        Billing. See: <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a>.
       </li>
     </ol>
-    <p><strong>Jogalap:</strong></p>
+    <p><strong>Legal basis:</strong></p>
     <ul>
-      <li><strong>Hozzájárulás</strong> (GDPR 6. cikk (1) bek. a) pont) — személyre szabott hirdetésekhez (lásd 3. pont).</li>
-      <li><strong>Jogos érdek</strong> (GDPR 6. cikk (1) bek. f) pont) — hibajelentés és alkalmazás-stabilitás (Crashlytics), előfizetés-kezelés (RevenueCat).</li>
+      <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) — for personalised advertising (see Section 3).</li>
+      <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR) — for crash reporting and app
+        stability (Crashlytics), subscription management (RevenueCat).</li>
     </ul>
 
-    <!-- 3. Hozzájárulás-kezelés -->
-    <h2>3. Hozzájárulás-kezelés (consent)</h2>
+    <!-- 3. Consent Management -->
+    <h2>3. Consent Management</h2>
     <p>
-      Az Európai Gazdasági Térség (EGT) területén a <strong>Google User Messaging Platform (UMP)</strong>
-      segítségével kérjük a hozzájárulásodat az adatgyűjtéshez, mielőtt bármilyen hirdetést megmutatnánk.
+      In the European Economic Area (EEA), we use the <strong>Google User Messaging Platform
+      (UMP)</strong> to obtain your consent before any advertising data is collected.
     </p>
     <ul>
-      <li><strong>Személyre szabott hirdetések:</strong> Csak akkor jelenítünk meg személyre szabott
-        hirdetéseket, ha kifejezetten elfogadod a hozzájárulási párbeszédet.</li>
-      <li><strong>Visszavonás:</strong> A hozzájárulásodat bármikor módosíthatod az alkalmazás
-        beállításaiban vagy az eszközöd rendszerbeállításaiban (hirdetés-azonosító visszaállítása).</li>
+      <li><strong>Personalised ads:</strong> Shown only if you explicitly accept the consent dialog.</li>
+      <li><strong>Opt-out:</strong> You can change your consent at any time through the consent dialog
+        (triggered on app launch when required) or by resetting your device's advertising ID in
+        your system settings.</li>
     </ul>
 
-    <!-- 4. Harmadik felek -->
-    <h2>4. Harmadik felek, akikhez az alkalmazás közvetlenül kapcsolódik</h2>
+    <!-- 4. Third Parties -->
+    <h2>4. Third Parties the App Connects To</h2>
     <p>
-      Az alkalmazás az alábbi külső szolgáltatásokkal kommunikál közvetlenül. Ezek önálló adatkezelők,
-      saját adatvédelmi szabályzattal:
+      The app communicates directly with the following external services. Each is an independent data
+      controller with its own privacy policy:
     </p>
     <table>
       <tr>
-        <th>Szolgáltatás</th>
-        <th>Cél</th>
-        <th>Továbbított adat</th>
+        <th>Service</th>
+        <th>Purpose</th>
+        <th>Data Transmitted</th>
       </tr>
       <tr>
         <td><strong>Microsoft / Xbox Live / Mojang</strong><br>
           (<code>login.microsoftonline.com</code>, <code>user.auth.xboxlive.com</code>,
            <code>xsts.auth.xboxlive.com</code>, <code>api.minecraftservices.com</code>)</td>
-        <td>Microsoft-fiókos bejelentkezés, Xbox Live hitelesítés, Minecraft licence- és profil-ellenőrzés</td>
-        <td>OAuth2/PKCE tokencserén keresztül: MSA access/refresh token, XBL/XSTS token, Minecraft access token</td>
+        <td>Microsoft account sign-in, Xbox Live authentication, Minecraft license &amp; profile verification</td>
+        <td>OAuth2/PKCE token exchange: MSA access/refresh tokens, XBL/XSTS tokens, Minecraft access token</td>
       </tr>
       <tr>
-        <td><strong>Az általad megadott Minecraft-szerverek</strong><br>(TCP socket-kapcsolat)</td>
-        <td>Chat küldése és fogadása, játékállapot</td>
-        <td>Minecraft-felhasználónév, session token (prémium mód), chat-üzenetek, játék-csomagok</td>
+        <td><strong>Your chosen Minecraft servers</strong><br>(direct TCP socket connection)</td>
+        <td>Sending and receiving chat messages, game state</td>
+        <td>Minecraft username, session token (premium mode), chat messages, game packets</td>
       </tr>
       <tr>
         <td><strong>Minotar</strong><br>(<code>minotar.net</code>)</td>
-        <td>Karakterfejek (skin avatárok) megjelenítése a felületen</td>
-        <td>Minecraft-felhasználónév (URL-ben, nyilvánosan elérhető adat)</td>
+        <td>Displaying player skin head avatars in the UI</td>
+        <td>Minecraft username (in URL, publicly available data)</td>
       </tr>
       <tr>
         <td><strong>Google Play Billing</strong></td>
-        <td>Előfizetés feldolgozása (MineChat Pro)</td>
-        <td>Vásárlási tranzakció (a Google kezeli, nincs hozzáférésünk a fizetési adatokhoz)</td>
+        <td>Processing subscription payments (MineChat Pro)</td>
+        <td>Purchase transaction (handled by Google; we have no access to payment details)</td>
       </tr>
     </table>
 
-    <!-- 5. Android biztonsági mentés -->
-    <h2>5. Android biztonsági mentés (Auto Backup)</h2>
+    <!-- 5. Android Auto Backup -->
+    <h2>5. Android Auto Backup</h2>
     <p>
-      Az alkalmazás támogatja az Android Auto Backup funkciót, ami a mentett karaktereket, szervereket
-      és beállításokat átmenti egy újratelepítés esetén. A következő adatok <strong>ki vannak zárva</strong>
-      a biztonsági mentésből biztonsági okokból:
+      The app supports Android Auto Backup, which preserves your saved characters, servers, and
+      settings across reinstalls. The following data is <strong>excluded</strong> from backup for
+      security and practical reasons:
     </p>
     <ul>
-      <li><strong>Microsoft refresh token</strong> (<code>FlutterSecureStorage.xml</code>) — az Android
-        Keystore titkosítókulcs nem exportálható, ezért a másolat egy másik eszközön nem lenne
-        visszafejthető.</li>
-      <li><strong>Térképtömbök</strong> (<code>map_data/</code>) és <strong>naplófájlok</strong>
-        (<code>logs/</code>) — méretük korlátlan növekedése meghaladhatná a 25 MB-os biztonsági mentési
-        kvótát.</li>
+      <li><strong>Microsoft refresh token</strong> (<code>FlutterSecureStorage.xml</code>) — the
+        Android Keystore encryption key is non-exportable; restoring the ciphertext on a different
+        device would produce an undecryptable blob and a broken login state.</li>
+      <li><strong>Map tile data</strong> (<code>map_data/</code>) and <strong>log files</strong>
+        (<code>logs/</code>) — their unbounded growth could exceed the 25 MB Auto Backup quota,
+        silently disabling backup for the useful data.</li>
     </ul>
 
-    <!-- 6. Engedélyek -->
-    <h2>6. Az alkalmazás által kért engedélyek</h2>
+    <!-- 6. Permissions -->
+    <h2>6. App Permissions</h2>
     <table>
       <tr>
-        <th>Engedély</th>
-        <th>Cél</th>
+        <th>Permission</th>
+        <th>Purpose</th>
       </tr>
       <tr>
         <td><code>INTERNET</code></td>
-        <td>TCP-kapcsolat a Minecraft-szerverhez, Microsoft bejelentkezés, hirdetések, hibajelentés,
-          előfizetés-ellenőrzés, avatar-letöltés</td>
+        <td>TCP connections to Minecraft servers, Microsoft sign-in, ad serving, crash reporting,
+          subscription verification, avatar loading</td>
       </tr>
     </table>
     <p>
-      Az alkalmazás <strong>nem kér</strong> hozzáférést a kamerához, mikrofonhoz, névjegyekhez,
-      helyadatokhoz, fájlrendszerhez vagy bármilyen más érzékeny engedélyhez.
+      The app does <strong>not</strong> request access to your camera, microphone, contacts, location,
+      files, or any other sensitive permission.
     </p>
 
-    <!-- 7. Adatmegőrzés -->
-    <h2>7. Adatmegőrzés és törlés</h2>
+    <!-- 7. Data Retention -->
+    <h2>7. Data Retention and Deletion</h2>
     <ul>
-      <li><strong>Eszközön tárolt adatok:</strong> A Minecraft-hitelesítő adatok, beállítások, szerverek
-        és karakterek az eszközödön maradnak, amíg az alkalmazás telepítve van. Kijelentkezéssel,
-        a karakterek/szerverek törlésével, vagy az alkalmazás eltávolításával / adattörlésével minden
-        helyben tárolt adat megsemmisül.</li>
-      <li><strong>Firebase Crashlytics:</strong> A hibajelentési adatokat a Google a saját adatmegőrzési
-        szabályzata szerint általában 90 napig őrzi meg.</li>
-      <li><strong>AdMob:</strong> Az AdMob által gyűjtött adatok a Google szabályzata szerint jellemzően
-        9–18 hónapon belül törlődnek vagy anonimizálódnak.</li>
-      <li><strong>RevenueCat:</strong> Az előfizetési előzmények a RevenueCat platformján maradnak az
-        előfizetés és a fiók érvényessége alatt.</li>
+      <li><strong>On-device data:</strong> Minecraft credentials, settings, servers, and characters
+        remain on your device as long as the app is installed. Signing out, deleting
+        characters/servers, or uninstalling the app / clearing its data removes all locally stored
+        information.</li>
+      <li><strong>Firebase Crashlytics:</strong> Crash report data is retained by Google for
+        approximately 90 days, per their retention policy.</li>
+      <li><strong>AdMob:</strong> Data collected by AdMob is typically deleted or anonymised within
+        9 to 18 months, depending on Google's specific policies.</li>
+      <li><strong>RevenueCat:</strong> Subscription history is retained on the RevenueCat platform
+        for the duration of the subscription and account validity.</li>
     </ul>
 
-    <h3>Adattörlés lépései</h3>
+    <h3>How to Delete Your Data</h3>
     <ul>
-      <li>Menj az eszközöd <strong>Beállítások → Alkalmazások → MineChat → Tárhely → Adatok törlése</strong>
-        menüpontjába, majd távolítsd el az alkalmazást.</li>
-      <li>Ha prémium fiókot használtál, az alkalmazáson belül előbb kattints a <strong>Kijelentkezés</strong>
-        gombra — ez törli a Microsoft refresh tokent a biztonságos tárhelyről.</li>
+      <li>On your device, go to <strong>Settings → Apps → MineChat → Storage → Clear Data</strong>,
+        then uninstall the app.</li>
+      <li>If you used a Microsoft account, tap <strong>Sign Out</strong> within the app first — this
+        deletes the Microsoft refresh token from the secure storage.</li>
     </ul>
 
-    <!-- 8. Gyermekek -->
-    <h2>8. Gyermekek</h2>
+    <!-- 8. Children -->
+    <h2>8. Children's Privacy</h2>
     <p>
-      Az alkalmazás nem gyermekeknek szól. Nem gyűjtünk tudatosan 13 (illetve a helyi jog szerinti
-      korhatár alatti) éven aluli felhasználóktól személyes adatot. Ha tudomásunkra jut, hogy ilyen
-      adatot tároltunk, haladéktalanul töröljük.
+      The app is not directed at children. We do not knowingly collect personal data from users under
+      the age of 13 (or the applicable age of consent in your jurisdiction). If we become aware that
+      such data has been collected, we will delete it promptly.
     </p>
 
-    <!-- 9. Nemzetközi adattovábbítás -->
-    <h2>9. Nemzetközi adattovábbítás</h2>
+    <!-- 9. International Transfers -->
+    <h2>9. International Data Transfers</h2>
     <p>
-      Mivel olyan szolgáltatókat használunk, mint a Google (Firebase, AdMob) és a RevenueCat, az
-      eszközazonosítók és IP-címek az <strong>Amerikai Egyesült Államokba</strong> továbbítódhatnak.
-      Ezek a szolgáltatók az <strong>EU–US Data Privacy Framework</strong> keretében, illetve
-      <strong>Standard Contractual Clauses (SCC)</strong> alapján biztosítják az adatvédelmet.
+      Because we use providers such as Google (Firebase, AdMob) and RevenueCat, device identifiers and
+      IP addresses may be transferred to and processed in the <strong>United States</strong>. These
+      providers rely on the <strong>EU–U.S. Data Privacy Framework</strong> and/or <strong>Standard
+      Contractual Clauses (SCCs)</strong> to ensure adequate data protection.
     </p>
 
-    <!-- 10. Jogaid (GDPR) -->
-    <h2>10. Jogaid a GDPR szerint</h2>
-    <p>Az EU/EGT területén lakó felhasználóként az alábbi jogokkal rendelkezel:</p>
+    <!-- 10. Your Rights -->
+    <h2>10. Your Rights Under the GDPR</h2>
+    <p>If you are located in the EU/EEA, you have the following rights:</p>
     <ul>
-      <li><strong>Hozzáférés joga:</strong> Megtekintheted, milyen adatokat tárol az alkalmazás
-        (a legtöbbet közvetlenül az alkalmazás felületén látod).</li>
-      <li><strong>Törléshez való jog („elfeledtetés joga"):</strong> Az alkalmazás eltávolításával
-        és az eszközön tárolt adatok törlésével az összes helyi adat törlődik.</li>
-      <li><strong>Hozzájárulás visszavonásának joga:</strong> A hirdetési hozzájárulást bármikor
-        módosíthatod az alkalmazás beállításaiban vagy az eszközöd hirdetés-azonosítójának visszaállításával.</li>
-      <li><strong>Panasztétel joga:</strong> Jogodban áll panasszal fordulni a <strong>Nemzeti Adatvédelmi
-        és Információszabadság Hatósághoz (NAIH)</strong> — <a href="https://naih.hu">naih.hu</a>.</li>
+      <li><strong>Right of Access:</strong> You can see what data the app holds (most of it is visible
+        directly within the app).</li>
+      <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Uninstalling the app and
+        clearing its data removes all locally stored information.</li>
+      <li><strong>Right to Withdraw Consent:</strong> You can change your advertising consent at any
+        time via the consent dialog or your device's advertising ID settings.</li>
+      <li><strong>Right to Lodge a Complaint:</strong> You may contact the <strong>Hungarian National
+        Authority for Data Protection and Freedom of Information (NAIH)</strong> —
+        <a href="https://naih.hu">naih.hu</a>.</li>
     </ul>
 
-    <!-- 11. Szabályzat módosítása -->
-    <h2>11. A szabályzat módosítása</h2>
+    <!-- 11. Changes -->
+    <h2>11. Changes to This Policy</h2>
     <p>
-      A szabályzatot időről időre frissíthetjük; a lényeges változásokat az alkalmazás
-      frissítésével és a fenti hatálybalépési dátum módosításával jelezzük.
+      We may update this policy from time to time. We will notify you of material changes by updating
+      the "Effective" date at the top of this page.
     </p>
 
-    <!-- 12. Kapcsolat -->
-    <h2>12. Kapcsolat</h2>
+    <!-- 12. Contact -->
+    <h2>12. Contact Us</h2>
     <p>
-      Bármilyen adatvédelmi kérdés, hozzáférési vagy törlési kérelem esetén kérjük, vedd fel velünk a
-      kapcsolatot: <a href="mailto:bg.robrt@gmail.com">bg.robrt@gmail.com</a>.
+      For any privacy-related questions, data access requests, or deletion requests, please reach out:
     </p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:bg.robrt@gmail.com">bg.robrt@gmail.com</a></li>
+      <li><strong>Discord:</strong> <a href="https://discord.gg/XNfuz8vDs">discord.gg/XNfuz8vDs</a>
+        — our community server for questions, bug reports, and feedback.</li>
+    </ul>
 
-    <!-- English summary -->
-    <div class="en">
-      <h2>English summary</h2>
-      <p>
-        MineChat is an independent, <strong>unofficial</strong> Minecraft: Java Edition chat client for
-        Android. It has <strong>no backend server</strong> and does <strong>not transmit your data to
-        us</strong>. All data — your saved offline character names, server list, Microsoft profile info
-        (username/UUID), and Microsoft refresh token (encrypted via Android Keystore in
-        <code>flutter_secure_storage</code>) — is kept only on your device and can be removed by logging
-        out or uninstalling the app.
-      </p>
-      <p>
-        The app connects directly to:
-      </p>
-      <ul>
-        <li><strong>Microsoft / Xbox Live / Mojang</strong> — for sign-in via OAuth2/PKCE and Minecraft
-          session authentication (token exchange through <code>login.microsoftonline.com</code>,
-          <code>user.auth.xboxlive.com</code>, <code>xsts.auth.xboxlive.com</code>, and
-          <code>api.minecraftservices.com</code>).</li>
-        <li><strong>Your chosen Minecraft servers</strong> — direct TCP connections; we are not the
-          server operator.</li>
-        <li><strong>Minotar (<code>minotar.net</code>)</strong> — a public avatar service to display
-          player skin heads by Minecraft username.</li>
-      </ul>
-      <p>
-        <strong>Third-party SDKs:</strong>
-      </p>
-      <ul>
-        <li><strong>Firebase Crashlytics (Google)</strong> — anonymous crash reporting. Collection is
-          disabled in debug builds; only release builds report crashes. Reports contain device type,
-          OS version, and stack traces — no personal data, chat messages, or server addresses.</li>
-        <li><strong>Google AdMob</strong> — displays banner and interstitial ads in the free version.
-          May process the Android Advertising ID (AAID) and IP address for ad serving and fraud
-          prevention. A GDPR consent dialog (Google UMP) is presented in the EU/EEA before any ads
-          load. MineChat Pro subscribers see no ads and AdMob does not request further data.</li>
-        <li><strong>RevenueCat</strong> — manages in-app subscriptions (MineChat Pro) and entitlement
-          checking. Tracks an anonymous App User ID and purchase history. Has no access to credit card
-          details — payments are processed solely by Google Play Billing.</li>
-      </ul>
-      <p>
-        <strong>Permissions:</strong> The only Android permission is <code>INTERNET</code> (for
-        Minecraft server connections, auth, ads, crash reporting, and avatar loading). No camera,
-        microphone, contacts, location, or storage access is requested.
-      </p>
-      <p>
-        <strong>Auto Backup:</strong> Android Auto Backup covers saved profiles, servers, and settings.
-        The Microsoft refresh token (<code>FlutterSecureStorage.xml</code>), map data, and logs are
-        excluded from backup.
-      </p>
-      <p>
-        Not intended for children under 13. Contact:
-        <a href="mailto:bg.robrt@gmail.com">bg.robrt@gmail.com</a>.
-        Supervisory authority: <strong>NAIH</strong> (Hungary) — <a href="https://naih.hu">naih.hu</a>.
-      </p>
-    </div>
-
-    <footer>© 2026 MineChat · A „Minecraft" a Mojang Synergies AB védjegye. Nem hivatalos, független alkalmazás.</footer>
+    <footer>© 2026 MineChat · "Minecraft" is a trademark of Mojang Synergies AB. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</footer>
   </main>
 </body>
 </html>
